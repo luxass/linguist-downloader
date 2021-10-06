@@ -1,0 +1,12 @@
+{
+    "name": "linguist-downloader",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "https://github.com/DeprecatedLuxas/linguist-downloader.git",
+    "author": "DeprecatedLuxas <lucasmathias65@icloud.com>",
+    "license": "MIT",
+    "dependencies": {
+        "axios": "^0.22.0",
+        "js-yaml": "^4.1.0"
+    }
+}
