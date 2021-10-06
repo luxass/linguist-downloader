@@ -5,7 +5,7 @@ const fs = require("fs");
 const linguistUrl =
     "https://raw.githubusercontent.com/github/linguist/master/lib/linguist/languages.yml";
 
-axios.get(linguistUrl).then((response) => {
-    const parsedYaml = jsYaml.load(response.data);
-    fs.writeFileSync("languages.json", JSON.stringify(parsedYaml, null, 2));
-});
+module.exports = async function downloader() {
+    const response = await axios.get(linguistUrl);
+    return jsYaml.load(response.data);
+};
